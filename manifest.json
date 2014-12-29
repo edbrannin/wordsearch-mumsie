@@ -1,6 +1,6 @@
 {
-  "name": "Hello World!",
-  "description": "My first Chrome App.",
+  "name": "Word Search",
+  "description": "Word Search tailored for Mumsie",
   "version": "0.1",
   "manifest_version": 2,
   "app": {
@@ -8,5 +8,8 @@
       "scripts": ["background.js"]
     }
   },
-  "icons": { "16": "calculator-16.png", "128": "calculator-128.png" }
+  "icons": {
+    "16": "1419834388_note_search.png",
+    "128": "1419834376_note_search.png"
+  }
 }
