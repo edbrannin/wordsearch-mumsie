@@ -77,6 +77,7 @@ li {
 </style>
 
 <script type="text/javascript" src="wordsearch.js"></script>
+<script type="text/javascript" src="wordlists.js"></script>
 
 </head>
 
@@ -124,7 +125,7 @@ if(wordlists) {
 		<div style="text-align:center;"><br />'+LANG[selectedLanguage]['or']+'<br /></div> \
 		<div><br /> \
 		<table cellspacing="0" style="width:100%"> \
-		<tr><td class="inputTitle">'+LANG[selectedLanguage]['wlnum']+'</td><td><input type="text" id="numWords" size="2" /></td></tr> \
+		<tr><td class="inputTitle">'+LANG[selectedLanguage]['wlnum']+'</td><td><input type="text" id="numWords" size="2" value="15" /></td></tr> \
 		<tr><td class="inputTitle">'+LANG[selectedLanguage]['wlwords']+'</td><td> \
 		<select id="wordList">';
 	for(var a=0;a<=wordListArray.length-1;a++) {
@@ -172,7 +173,7 @@ document.write('<br /><div class="inputTitle">'+LANG[selectedLanguage]['man']+'<
 			<select name="BorF" id="BorF" style="margin-left:10px;margin-top:10px;">
 				<option value="regular"><script type="text/javascript">document.write(LANG[selectedLanguage]['borf']);</script></option>
 				<option value="bonly"><script type="text/javascript">document.write(LANG[selectedLanguage]['bonly']);</script></option>
-				<option value="fonly"><script type="text/javascript">document.write(LANG[selectedLanguage]['fonly']);</script></option>
+				<option value="fonly" selected><script type="text/javascript">document.write(LANG[selectedLanguage]['fonly']);</script></option>
 			</select>
 
 			<br /><br />
@@ -200,9 +201,9 @@ document.write('<br /><div class="inputTitle">'+LANG[selectedLanguage]['man']+'<
 
 			<br /><br />
 
-			<input type="checkbox" id="sortAlpha" style="margin-left:10px;" value="TRUE" /> <script type="text/javascript">document.write(LANG[selectedLanguage]['sort']);</script><br />
-			<input type="checkbox" id="lowerCase" style="margin-left:10px;" value="TRUE" /> <script type="text/javascript">document.write(LANG[selectedLanguage]['lower']);</script><br />
-			<input type="checkbox" id="useLetters" style="margin-left:10px;" value="TRUE" /> <script type="text/javascript">document.write(LANG[selectedLanguage]['wordlist']);</script><br />
+			<input type="checkbox" id="sortAlpha" style="margin-left:10px;" checked /> <script type="text/javascript">document.write(LANG[selectedLanguage]['sort']);</script><br />
+			<input type="checkbox" id="lowerCase" style="margin-left:10px;" checked /> <script type="text/javascript">document.write(LANG[selectedLanguage]['lower']);</script><br />
+			<input type="checkbox" id="useLetters" style="margin-left:10px;" checked /> <script type="text/javascript">document.write(LANG[selectedLanguage]['wordlist']);</script><br />
 		</div>
 
 		<div id="_load" style="display:none" class="tabcontent">
